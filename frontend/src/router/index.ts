@@ -32,6 +32,12 @@ const routes: RouteRecordRaw[] = [
         meta: { title: '全生命周期', icon: 'Clock' }
       },
       {
+        path: 'lifecycle/compare',
+        name: 'LifecycleCompare',
+        component: () => import('@/views/lifecycle/compare.vue'),
+        meta: { title: '阶段对比', hidden: true }
+      },
+      {
         path: 'drilling',
         name: 'Drilling',
         component: () => import('@/views/drilling/index.vue'),
